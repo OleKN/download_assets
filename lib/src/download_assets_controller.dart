@@ -50,7 +50,7 @@ class DownloadAssetsController {
 
       //await clearAssets();
       await Directory(_assetsDir).create();
-      String fullPath = '$_assetsDir/$_assetsUrl.zip';
+      String fullPath = '$_assetsDir/' + assetsUrl + '.zip';
       double totalProgress = 0;
 
       if (onProgress != null)
