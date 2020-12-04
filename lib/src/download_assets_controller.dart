@@ -48,7 +48,7 @@ class DownloadAssetsController {
       if (assetsUrl == null || assetsUrl.isEmpty)
         throw DownloadAssetsException("AssetUrl param can't be empty");
 
-      await clearAssets();
+      //await clearAssets();
       await Directory(_assetsDir).create();
       String fullPath = '$_assetsDir/assets.zip';
       double totalProgress = 0;
